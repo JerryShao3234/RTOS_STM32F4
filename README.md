@@ -1,6 +1,9 @@
 # RTOS_STM32F4
 
 RTOS on an STM32F411 microcontroller with Round-Robin/Weighted Round-Robin task scheduling:
+-use SysTick as a timer to pre-emptively context switch (implemented in asm)
+-osKernel initializes memory and threads properly for context switching
+-main just defines the tasks/threads and runs them using kernel
 
 GPIO Pin stuff:
 
